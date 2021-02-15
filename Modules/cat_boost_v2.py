@@ -15,7 +15,7 @@ def cat_boost(data, iters):
     # Timing the model
     start_time = time.time()
     
-    # CatBoost doesn't like null values either. Also filling them with something easy and predictably OOB here
+    # CatBoost doesn't like null values either. Also filling them with something easy and predictably out of scope here
     data = data.fillna(-999)
 
     # Catboost also doesn't like dealing with floats, so shifting those over to integer
